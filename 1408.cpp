@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <iostream>
 #include <string.h> 
@@ -30,7 +31,7 @@ int main(void) {
 		printf("%02d:%02d:%02d", h3, m3, s3);
 	}
 	else {
-		int time3 = 86400 - time1 - time2;
+		int time3 = 86400 - (time1 - time2);
 		int h3 = time3 / 3600;
 		int m3 = (time3 % 3600) / 60;
 		int s3 = (time3 % 3600) % 60;
